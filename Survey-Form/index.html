@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Survey</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">VIDEO GAME SURVEY</h1>
+    <p id="description">This survey help us indicate different types of gamers. Please answer the survey honestly.
+      Thank
+      You! </p>
+  </header>
+
+  <form id="survey-form" action="#">
+    <div class="title-holder">
+      <h2 class="contact-information-title">Contact Information</h2>
+    </div>
+    <section class="contact-information">
+
+      <div class="name-wrapper">
+        <label id="name-label" for="full-name">Full Name
+          <input type="text" id="name" name="name" placeholder="e.g. Steve Rogers" required>
+        </label>
+      </div>
+
+      <div class="age-wrapper">
+        <label id="number-label" for="number">Age
+          <input type="number" id="number" name="number" min="0" max="100" placeholder="e.g. 18" required>
+        </label>
+      </div>
+      </div>
+      <div id="dropdown">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender-select" required>
+          <option value="#">(select your gender)</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="address-label">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="(your complete address)" required>
+      </div>
+      <div class="contact-number-label">
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" name="contact-number" id="contact-number" placeholder="+xx xxxx xxxxx" required>
+      </div>
+
+      <label id="email-label" for="email">Email
+        <input type="email" name="email" id="email" placeholder="e.g. example@email.com" required>
+      </label>
+
+      <div class="civil-status-label">
+        <label for="civil-status-choice">Civil Status</label>
+        <input list="civil-status" id="civil-status-choice" name="civil-status-choice" placeholder="(optional)">
+        <datalist id="civil-status">
+          <option value="Single">
+          <option value="Married">
+          <option value="Divorced">
+        </datalist>
+      </div>
+    </section>
+    <section class="questionaire">
+      <section class="question1-question-and-answer-wrapper">
+        <p class="question1">How many hours do you spend time playing video games</p>
+        <div class="question1-choices-wrapper">
+          <label class="question1-choices" for="question1-answer-choice-1">
+            <input type="radio" name="hours-spend" value="1-3hours">1-3 hours/week?
+          </label>
+          <label class="question1-choices" for="question1-answer-choice-2">
+            <input type="radio" name="hours-spend" value="3-6hours">3-6 hours/week
+          </label>
+          <label class="question1-choices" for="question1-answer-choice-3">
+            <input type="radio" name="hours-spend" value="6-9hours">6-9 hours/week
+          </label>
+          <label class="question1-choices" for="question1-answer-choice-4">
+            <input type="radio" name="hours-spend" value="10+hours">10+ hours/week
+          </label>
+        </div>
+      </section>
+      <section class="question2-question-and-answer-wrappper">
+        <p class="question2">What gaming platform do you prefer to play?</p>
+        <div class="question2-choices-wrapper">
+          <label class="question2-choices" for="question2-choice-1">
+            <input type="radio" name="preffered-gaming-platform" id="question2-choice-1" value="desktop">Desktop
+          </label>
+
+          <label class="question2-choices" for="question2-choice-2">
+            <input type="radio" name="preffered-gaming-platform" id="question2-choice-2" value="console">Console
+          </label>
+
+          <label class="question2-choices" for="question2-choice-3">
+            <input type="radio" name="preffered-gaming-platform" id="question2-choice-3" value="mobile">Mobile
+          </label>
+
+          <label class="question2-choices" for="question2-choice-4">
+            <input type="radio" name="preffered-gaming-platform" id="question2-choice-4" value="arcade">Arcade
+          </label>
+        </div>
+      </section>
+
+      <section class="question3-question-and-answer-wrapper">
+        <p class="question3">Select the following popular game genres you had played.</p>
+        <div class="question3-choices-wrapper">
+          <label class="question3-choices" for="question3-choice-1">
+            <input type="checkbox" name="game-genres" id="question3-choice-4" value="shooters">Shooters (FPS/TPS)
+          </label>
+
+          <label class="question3-choices" for="question3-choice-2">
+            <input type="checkbox" name="game-genres" id="question3-choice-2" value="rts">Real-time Straregy (RTS)
+          </label>
+
+          <label class="question3-choices" for="question3-choice-3">
+            <input type="checkbox" name="game-genres" id="question3-choice-3" value="moba">Multiplayer Online Battle
+            Arena
+          </label>
+
+          <label class="question3-choices" for="question3-choice-4">
+            <input type="checkbox" name="game-genres" id="question3-choice-4" value="rpg">Role Playing Game (RPG)
+          </label>
+        </div>
+      </section>
+
+      <section class="question4-question-and-answer-wrapper">
+        <p class="question4">Why do you play video games?</p>
+        <div class="question4-choices-wrapper">
+          <label class="question4-choices" for="question4-choice-1">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-1" value="relieve-stress">Relieve Stress
+          </label>
+
+          <label class="question4-choices" for="question4-choice-2">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-2" value="safe-place-to-fail">Safe place
+            to fail
+          </label>
+
+          <label class="question4-choices" for="question4-choice-3">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-3" value="competition">Competition
+          </label>
+
+          <label class="question4-choices" for="question4-choice-4">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-4" value="income-or-career">Income /
+            Career
+          </label>
+
+          <label class="question4-choices" for="question4-choice-5">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-5" value="enjoyment">Enjoyment
+          </label>
+
+          <label class="question4-choices" for="question4-choice-6">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-6" value="freedom">Freedom
+          </label>
+
+          <label class="question4-choices" for="question4-choice-7">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-7" value=streaming"">Streaming
+          </label>
+
+          <label class="question4-choices" for="question4-choice-8">
+            <input type="checkbox" name="reason-to-play" id="question4-choice-8" value="excitement">Excitement
+          </label>
+        </div>
+      </section>
+    </section>
+    <section class="feedback-wrapper">
+      <div>
+        <h2>Comments and Suggestions</h2>
+      </div>
+      <div>
+
+        <label for="feedback">
+          <textarea name="feedback" id="feedback" cols="1500" rows="10" required></textarea>
+        </label>
+
+      </div>
+      <div class="submit-btn">
+        <button id="submit">SUBMIT</button>
+        <p>Thank you for taking our quick survey!</p>
+      </div>
+    </section>
+
+  </form>
+  <div class="background"><img src="http://wallpaperstock.net/blue-abstract-background_wallpapers_41955_1920x1080.jpg"
+      alt=""></div>
+
+</body>
+
+</html>
+>

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryfontSize: 1.2rem;
+  --primaryfontColor: #fff;
+  --formfontColor: #0077b6;
+  --titlefontColor: #283eb9;
+  --primaryfontFamily: "Varela Round", sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 300;
+  letter-spacing: 2px;
+}
+
+#title,
+#description {
+  font-family: var(--primaryfontFamily);
+}
+
+form,
+#description {
+  color: var(--primaryfontColor);
+}
+
+#description {
+  font-family: var(--primaryfontFamily);
+}
+
+form {
+  position: relative;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  font-family: var(--primaryfontFamily);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 1;
+}
+
+.background img {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#title,
+#description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.title-holder {
+  position: relative;
+  z-index: 400;
+}
+
+#survey-form,
+.title-holder {
+  margin: auto;
+}
+
+.contact-information-title {
+  color: #283eb9;
+  text-align: center;
+}
+
+.contact-information {
+  margin: 2em 0;
+}
+
+#description {
+  line-height: 1.3em;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+#survey-form {
+  background: rgb(69, 190, 252);
+  background: linear-gradient(
+    322deg,
+    rgba(69, 190, 252, 1) 0%,
+    rgba(192, 220, 236, 1) 39%,
+    rgba(192, 220, 236, 1) 63%,
+    rgba(69, 190, 252, 1) 100%
+  );
+  padding: 2em;
+  border-radius: 10px;
+  color: var(--formfontColor);
+  font-size: var(--primaryfontSize);
+  line-height: 1.5em;
+  width: 70vw;
+}
+
+textarea {
+  max-width: 100%;
+  resize: none;
+}
+
+#name,
+#number,
+#gender-select,
+#address,
+#contact-number,
+#email,
+#civil-status-choice {
+  display: block;
+  width: 100%;
+  min-width: 150px;
+  border: solid #283eb9;
+  border-radius: 5px;
+  font-family: var(--primaryfontFamily);
+  padding: 5px;
+  background: #e0e2db;
+}
+
+.questionaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.question1-question-and-answer-wrapper,
+.question2-question-and-answer-wrapper,
+.question3-question-and-answer-wrapper,
+.question4-question-and-answer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.question1-choices-wrapper,
+.question2-choices-wrapper,
+.question3-choices-wrapper,
+.question4-choices-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#feedback {
+  font-family: var(--primaryfontFamily);
+}
+
+.feedback-wrapper h2 {
+  padding: 0.5em 0;
+  text-align: center;
+  color: #283eb9;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#submit {
+  font-size: 1.3rem;
+  border: solid #283eb9;
+  border-radius: 10px;
+  font-family: var(--primaryfontFamily);
+  font-weight: 500;
+  background: cyan;
+  padding: 5px 50px;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+}
+
+.submit-btn p {
+  color: var(--primaryfontColor);
+}
