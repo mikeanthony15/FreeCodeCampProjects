@@ -17,7 +17,7 @@
   --secondaryfontSize: 2rem;
   --largefontSize: 3rem;
   --semilargefontSize: 2rem;
-  --smallscreenprimaryfontSize: 0.8rem;
+  --smallscreenprimaryfontSize: 1rem;
   --smallscreensecondaryfontSize: 1.3rem;
   --primaryfontfamily: "Roboto", sans-serif;
 }
@@ -154,6 +154,7 @@ INTRO / TRAILER
   font-size: var(--navfontSize);
   color: var(--secondaryColor);
   text-align: center;
+  padding: 1em 0;
 }
 
 .video-container {
@@ -240,10 +241,12 @@ PRODUCT DETAILS CONTAINER PART1
 
 .product-details-part1 {
   font-size: var(--secondaryfontSize);
+  padding: 1em 0;
 }
 
 .product-details-title1 {
   font-size: var(--largefontSize);
+  padding: 1em 0;
 }
 
 .product-details-container2 {
@@ -252,10 +255,12 @@ PRODUCT DETAILS CONTAINER PART1
 
 .product-details-part2 {
   font-size: var(--secondaryfontSize);
+  padding: 1em 0;
 }
 
 .product-details-title2 {
   font-size: var(--largefontSize);
+  padding: 1em 0;
 }
 
 /* 
@@ -278,6 +283,7 @@ PRODUCT DETAILS CONTAINER PART2
   /* background: green; */
   display: flex;
   flex-direction: column;
+  border-bottom: solid 1px white;
 }
 
 .product-details-desc-2 {
@@ -396,8 +402,9 @@ PRODUCT DETAILS CONTAINER PART3
 .including-title {
   /* background-color: red; */
   font-size: var(--largefontSize);
-  margin: 0.3em;
+  width: 95%;
   align-self: flex-start;
+  margin: 1em auto;
 }
 
 .image4-wrapper {
@@ -424,6 +431,7 @@ PRODUCT DETAILS CONTAINER PART3
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .including-list {
@@ -435,6 +443,9 @@ PRODUCT DETAILS CONTAINER PART3
   letter-spacing: 0.2em;
   text-align: center;
   margin: 2em;
+  padding: 1em;
+  border: solid 1px white;
+  border-radius: 10px;
 }
 
 .including-image-wrapper {
@@ -485,16 +496,16 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 1050px) {
-  body {
-    line-height: 3em;
+  .main {
+    line-height: 5em;
   }
 
   #header {
-    margin-top: 83px;
-    height: 18px;
-    letter-spacing: 10px;
-    font-size: 1rem;
-    border: none;
+    margin-top: 100px;
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    padding: 0;
   }
 
   .button,
@@ -543,7 +554,7 @@ MEDIA QUERIES
   }
 
   .main {
-    margin-top: 180px;
+    margin-top: 200px;
   }
 
   #title {
@@ -552,6 +563,7 @@ MEDIA QUERIES
 
   .product-ad-desc {
     padding: 0 1em;
+    line-height: 1em;
   }
 
   .product-details-container-part1 {
@@ -566,6 +578,7 @@ MEDIA QUERIES
 
   .product-highlights-header {
     font-size: var(--smallscreensecondaryfontSize);
+    line-height: 1em;
   }
 
   .product-highlights-desc1 {
@@ -575,9 +588,9 @@ MEDIA QUERIES
   }
 
   .product-details-title1 {
-    font-size: var(--smallscreensecondaryfontSize);
-    line-height: 1em;
+    font-size: var(--smallscreenprimaryfontSize);
     letter-spacing: 1px;
+    line-height: 1em;
   }
 
   .product-details-part1 {
@@ -596,6 +609,10 @@ MEDIA QUERIES
     font-size: var(--smallscreenprimaryfontSize);
     line-height: 1em;
     letter-spacing: 1px;
+  }
+
+  .including-title {
+    font-size: var(--smallscreensecondaryfontSize);
   }
 }
 
