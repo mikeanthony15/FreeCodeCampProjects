@@ -353,6 +353,85 @@ PRODUCT DETAILS CONTAINER PART2
 
 
 
+PRODUCT DETAILS CONTAINER PART3
+
+
+
+
+
+
+ */
+
+.product-details-container-part3 {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondaryColor);
+}
+
+.including-title {
+  /* background-color: red; */
+  font-size: var(--largefontSize);
+  margin: 0.3em;
+  align-self: flex-start;
+}
+
+.image4-wrapper {
+  /* background-color: royalblue; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 2.5em;
+}
+
+.image-4 {
+  /* background-color: orange; */
+  width: 100%;
+}
+
+.including {
+  width: 100%;
+  /* background-color: purple; */
+}
+
+.including-lists {
+  margin: auto;
+  width: 80%;
+  /* background-color: palegreen; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.including-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 2em;
+}
+
+.including-image-wrapper {
+  height: 60px;
+}
+
+.including-image {
+  height: 100%;
+}
+
+/* 
+
+
+
+
+
+
+
+
 
 
 
