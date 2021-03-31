@@ -29,7 +29,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: var(--primaryfontfamily);
-  line-height: 2.6em;
   letter-spacing: 0.1em;
 }
 
@@ -365,6 +364,7 @@ PRODUCT DETAILS CONTAINER PART2
   font-size: var(--secondaryfontSize);
   color: var(--secondaryColor);
   padding: 1em 0;
+  text-transform: uppercase;
 }
 
 .image-3 {
@@ -397,6 +397,7 @@ PRODUCT DETAILS CONTAINER PART3
   justify-content: center;
   align-items: center;
   color: var(--secondaryColor);
+  border-bottom: solid 1px white;
 }
 
 .including-title {
@@ -459,6 +460,59 @@ PRODUCT DETAILS CONTAINER PART3
 /* 
 
 
+SPECIFICATIONS
+
+
+
+ */
+
+.spec-title {
+  font-size: var(--largefontSize);
+  padding: 0.5em 0;
+}
+
+.spec-intro {
+  font-size: var(--semilargefontSize);
+  padding: 0.5em 0;
+  color: var(--secondaryColor);
+}
+
+.product-specification {
+  /* background-color: green; */
+  text-transform: uppercase;
+  padding: 1em 0;
+  border-bottom: solid 1px white;
+  width: 95%;
+  margin: auto;
+}
+
+table,
+th,
+td {
+  border: solid 1px black;
+  color: var(--secondaryColor);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.table-wrapper {
+  width: 80%;
+  background-color: gray;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+/* 
+
+
 
 
 
@@ -501,7 +555,7 @@ MEDIA QUERIES
   }
 
   #header {
-    margin-top: 100px;
+    margin-top: 67px;
     height: 50px;
     letter-spacing: 5px;
     font-size: 0.9rem;
@@ -614,6 +668,24 @@ MEDIA QUERIES
   .including-title {
     font-size: var(--smallscreensecondaryfontSize);
   }
+
+  .including-list-name {
+    line-height: 1em;
+    letter-spacing: 1px;
+  }
+
+  .spec-title,
+  .spec-intro-info {
+    padding: 0.5em;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+
+  th,
+  td {
+    line-height: 1rem;
+    font-size: 0.6rem;
+  }
 }
 
 /* 
@@ -623,25 +695,44 @@ MEDIA QUERIES
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  */
+
+@media screen and (max-width: 870px) {
+  th,
+  td {
+    display: block;
+  }
+  td {
+    color: var(--primaryColor);
+    text-align: center;
+  }
+  td:nth-child(odd):before {
+    display: block;
+    content: "RECOMMENDED SPECS";
+    border-bottom: solid 1px white;
+    color: yellowgreen;
+  }
+  td:nth-child(even):before {
+    display: block;
+    content: "MINIMUM SPECS";
+    border-bottom: solid 1px white;
+    color: blue;
+  }
+
+  th {
+    color: pink;
+  }
+
+  .rec {
+    color: yellowgreen;
+  }
+
+  .min,
+  .max,
+  .none {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .video-container {
