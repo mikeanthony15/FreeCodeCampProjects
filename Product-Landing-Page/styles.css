@@ -11,10 +11,10 @@
 :root {
   --navfontSize: 1.5rem;
   --smallscreennavfontSize: 0.9rem;
-  --secondaryColor: white;
+  --secondaryColor: rgb(255, 255, 255);
   --primaryColor: black;
   --backgroundColor: #1c1e20;
-  --primaryfontSize: 1.2rem;
+  --primaryfontSize: 1.5rem;
   --secondaryfontSize: 2rem;
   --largefontSize: 3rem;
   --semilargefontSize: 2rem;
@@ -322,8 +322,8 @@ PRODUCT DETAILS CONTAINER PART2
 
 .product-highlights-header {
   /* background: orange; */
-  width: 90%;
-  margin: auto;
+  width: 95%;
+  margin: 1em auto;
   color: var(--secondaryColor);
   font-size: var(--largefontSize);
 }
@@ -408,32 +408,27 @@ PRODUCT DETAILS CONTAINER PART3
 }
 
 .including-title {
-  /* background-color: red; */
-  font-size: var(--largefontSize);
   align-self: flex-start;
+  font-size: var(--largefontSize);
 }
 
 .image4-wrapper {
-  /* background-color: royalblue; */
   width: 100%;
   max-width: 1200px;
   margin: 2.5em;
 }
 
 .image-4 {
-  /* background-color: orange; */
   width: 100%;
 }
 
 .including {
   width: 100%;
-  /* background-color: purple; */
 }
 
 .including-lists {
   margin: auto;
   width: 80%;
-  /* background-color: palegreen; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -471,7 +466,6 @@ SPECIFICATIONS
 
  */
 .product-specification {
-  /* background-color: green; */
   border-bottom: solid 1px white;
 }
 
@@ -568,7 +562,6 @@ form {
   justify-content: center;
   color: var(--secondaryColor);
   position: relative;
-  /* background-color: green; */
   height: 100%;
   width: 100%;
   font-size: var(--primaryfontfamily);
@@ -588,9 +581,9 @@ form {
 
 input,
 label,
-h3,
 h4 {
-  margin: 1em 0;
+  margin: 0.5em 0;
+  font-size: var(--primaryfontSize);
 }
 
 .payment-method label {
@@ -607,6 +600,33 @@ h4 {
   padding: 1em;
   border: solid 2px black;
   border-radius: 10px;
+}
+
+.form-contact-information-title,
+.order-details h3,
+.payment {
+  padding: 1em 0;
+}
+
+/* 
+
+LINE HEIGHT LETTER SPACING 
+
+*/
+
+.product-details-title1,
+.product-details-part1,
+.product-details-title2,
+.product-details-part2,
+.product-highlights-header,
+.product-highlights-desc1,
+.product-highlights-desc2,
+.including-title,
+.spec-title,
+.spec-intro-info,
+.transaction-title {
+  line-height: 2.7rem;
+  letter-spacing: 0.1em;
 }
 
 /* 

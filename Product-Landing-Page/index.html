@@ -23,7 +23,7 @@
           <li><a class="nav-link home-link" href="#home">Home</a></li>
           <li><a class="nav-link specs-link" href="#specs">Specification</a></li>
           <li><a class="nav-link contact-link" href="#">Contact</a></li>
-          <li><button class="button order-link">ORDER NOW</button></li>
+          <li><a href="#buy-now"><button class="button order-link">ORDER NOW</button></a> </li>
         </ul>
       </nav>
     </header>
@@ -228,8 +228,8 @@
         </div>
       </section>
 
-      <section class="transaction-wrapper">
-        <p class="transaction-title">Don't miss this out. hurry, grab yours now for <span>$399</span> only.</p>
+      <section id="buy-now" class="transaction-wrapper">
+        <p class="transaction-title">Don't miss this out grab yours now for <span>$399</span> only.</p>
         <div class="transaction">
           <figure class="featured-product-image-wrapper">
             <img class="featured-product-image" src="https://www.multicopter.gr/datafiles/5977.jpg" alt="">
@@ -244,6 +244,9 @@
                 <label for="buyer-contact-number">Contact Number
                   <input type="tel" name="contact-number" id="buyer-contact-number" required>
                 </label>
+                <label for="buyer-email">Email
+                  <input type="email" name="email" id="buyer-email" required>
+                </label>
                 <label for="buyer-address">Address
                   <input type="text" name="address" id="buyer-address" required>
                 </label>
@@ -252,6 +255,7 @@
                 <h3 class="order">Order Details</h3>
                 <h4>Order Number #001193148</h4>
                 <h4>Color : Black</h4>
+                <h4>Item Weight : 0.5 kilograms</h4>
                 <label for="product-quantity">Quantity
                   <input type="number" name="quantity" id="product-quantity" min="0" max="999" required>
                 </label>
@@ -274,8 +278,43 @@
           </div>
         </div>
       </section>
+
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Tel. 27928-2837</li>
+            <li>That City, This street block 420</li>
+            <li>vr -station@gmail.com</li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">Downloads</a></li>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h4>Lorem ipsum dolor sit amet. 2021</h4>
+      </div>
+    </footer>
   </section>
 </body>
 
