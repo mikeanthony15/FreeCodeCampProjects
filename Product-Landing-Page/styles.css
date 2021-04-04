@@ -121,7 +121,8 @@ WRAPPERS
 .product-specification,
 .product-details-container-part3,
 .product-details-container-part2,
-.product-details-container-part1 {
+.product-details-container-part1,
+.transaction-wrapper {
   padding: 2em;
 }
 
@@ -397,7 +398,7 @@ PRODUCT DETAILS CONTAINER PART3
  */
 
 .product-details-container-part3 {
-  /* background-color: green; */
+  background-color: var(--backgroundColor);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,6 +485,14 @@ SPECIFICATIONS
   margin: 0.5em 0;
 }
 
+.spec-intro-info {
+  padding-bottom: 1em;
+}
+
+.spec-table {
+  width: 100%;
+}
+
 table,
 th,
 td {
@@ -521,27 +530,91 @@ th {
 /* 
 
 
+transaction
 
 
+ */
 
+.transaction-wrapper {
+  background-color: var(--backgroundColor);
+}
 
+.transaction-title {
+  font-size: var(--largefontSize);
+  margin-bottom: 1em;
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+}
 
+.transaction {
+  display: flex;
+  flex-direction: row;
+}
 
+.featured-product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
 
+.featured-product-image {
+  width: 100%;
+}
 
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--secondaryColor);
+  position: relative;
+  /* background-color: green; */
+  height: 100%;
+  width: 100%;
+  font-size: var(--primaryfontfamily);
+}
+
+.form-wrapper h3 {
+  font-size: var(--secondaryfontSize);
+}
+
+.transaction div {
+  margin: 0 1em;
+}
+
+.customer-contact-information input {
+  display: block;
+}
+
+input,
+label,
+h3,
+h4 {
+  margin: 1em 0;
+}
+
+.payment-method label {
+  display: block;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 1em !important;
+}
+
+.transaction-but {
+  display: block;
+  margin: 3em 0;
+  padding: 1em;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+/* 
 
 
 
 
 MEDIA QUERIES
-
-
-
-
-
-
-
-
 
 
 
@@ -551,7 +624,8 @@ MEDIA QUERIES
   .product-specification,
   .product-details-container-part3,
   .product-details-container-part2,
-  .product-details-container-part1 {
+  .product-details-container-part1,
+  .transaction-wrapper {
     padding: 1em;
   }
 
@@ -772,16 +846,36 @@ MEDIA QUERIES
     line-height: 1rem;
     font-size: 0.6rem;
   }
+
+  .transaction-title {
+    line-height: 2rem;
+    font-size: var(--smallscreenprimaryfontSize);
+  }
+
+  .transaction {
+    flex-direction: column;
+  }
+
+  .featured-product-image-wrapper {
+    width: 100%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  form {
+    line-height: 2em;
+    flex-direction: column;
+  }
+  .transaction div {
+    margin: 1em 0;
+  }
+
+  form label {
+    font-size: var(--smallscreenprimaryfontSize);
+  }
 }
-
-/* 
-
-
-
-
-
-
- */
 
 @media screen and (max-width: 500px) {
   .video-container {
