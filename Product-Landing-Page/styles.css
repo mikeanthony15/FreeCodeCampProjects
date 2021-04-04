@@ -122,7 +122,8 @@ WRAPPERS
 .product-details-container-part3,
 .product-details-container-part2,
 .product-details-container-part1,
-.transaction-wrapper {
+.transaction-wrapper,
+footer {
   padding: 2em;
 }
 
@@ -606,6 +607,46 @@ h4 {
 .order-details h3,
 .payment {
   padding: 1em 0;
+}
+
+/* 
+
+
+FOOTER 
+
+
+*/
+
+footer {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li a,
+.copyright a {
+  color: var(--secondaryColor);
+}
+
+.contact-socials-support-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding: 5em;
+  margin: auto;
+}
+
+.copyright {
+  text-align: center;
 }
 
 /* 
