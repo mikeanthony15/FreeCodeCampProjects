@@ -672,11 +672,20 @@ li a,
 .socials-list,
 .support-list {
   font-family: var(--secondaryfontfamily);
+  font-size: var(--primaryfontSize);
 }
 
-.contact-list li {
+.contact-list li,
+.socials-list li,
+.support-list li {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0.3em 0;
+}
+
+.fab,
+.fas {
+  padding-right: 0.5em;
 }
 
 /* 
@@ -995,6 +1004,12 @@ MEDIA QUERIES
   #footer div {
     padding: 1.5em 0;
   }
+
+  .contact-list,
+  .socials-list,
+  .support-list {
+    font-size: var(--smallscreenprimaryfontSize);
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1013,7 +1028,7 @@ MEDIA QUERIES
   .customer-contact-information input,
   .order-details input {
     width: 50%;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .order-details input {
