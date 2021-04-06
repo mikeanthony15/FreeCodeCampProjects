@@ -9,27 +9,32 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
+
+
   <section class="page-wrapper">
+
     <header id="header">
       <nav id="nav-bar">
         <ul>
-          <li class="header-img-wrapper"><a class="header-img-a" href="#"><img id="header-img" class="nav-link"
+          <li class="header-img-wrapper"><a class="header-img-a" href="#"><img id="header-img"
                 src="https://t3.ftcdn.net/jpg/03/30/29/90/240_F_330299008_EGRCQQGsMOFmajECxx3jlyvwQ1ClKaaP.jpg"
                 alt="#"></a>
           </li>
-          <li><a class="nav-link home-link" href="#home">Home</a></li>
-          <li><a class="nav-link specs-link" href="#specs">Specification</a></li>
-          <li><a class="nav-link contact-link" href="#footer">Contact</a></li>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#specs">Specification</a></li>
+          <li><a class="nav-link" href="#footer">Contact</a></li>
           <li><a href="#buy-now"><button class="button order-link">ORDER NOW</button></a> </li>
         </ul>
       </nav>
     </header>
 
     <main class="main">
-
       <section id="home" class="product-ad">
         <h1 class="title">OCULUS RIFT-S</h1>
         <p class="product-ad-desc">Oculus Rift S is our most advanced PC-powered gaming VR headset. Step into our best
@@ -42,6 +47,7 @@
             allowfullscreen></iframe>
         </figure>
       </section>
+
 
       <section class="product-details-container-part1">
         <div class="product-details-desc">
@@ -73,13 +79,6 @@
       </section>
 
 
-
-
-
-
-
-
-
       <section class="product-details-container-part2">
         <div class="product-details-desc-2">
           <div class="image2-wrapper">
@@ -94,7 +93,6 @@
             </p>
           </div>
         </div>
-
         <div class="product-details-desc-3">
           <div class="product-highlights2">
             <p class="product-highlights-desc2">
@@ -170,7 +168,6 @@
       </section>
 
 
-
       <section id="specs" class="product-specification">
         <div class="spec-intro">
           <h3 class="spec-title">SPECIFICATION</h3>
@@ -228,6 +225,7 @@
         </div>
       </section>
 
+
       <section id="buy-now" class="transaction-wrapper">
         <p class="transaction-title">Don't miss this out grab yours now for <span>$399</span> only.</p>
         <div class="transaction">
@@ -235,7 +233,7 @@
             <img class="featured-product-image" src="https://www.multicopter.gr/datafiles/5977.jpg" alt="">
           </figure>
           <div class="form-wrapper">
-            <form action="https://www.freecodecamp.com/email-submit">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
               <div class="customer-contact-information">
                 <h3 class="form-contact-information-title">Contact Information</h3>
                 <label for="buyer-full-name">Full Name
@@ -246,7 +244,7 @@
                     required>
                 </label>
                 <label for="buyer-email">Email
-                  <input type="email" name="email" id="buyer-email" placeholder="e.g. youremail@email.com" required>
+                  <input type="email" name="email" id="email" placeholder="e.g. youremail@email.com" required>
                 </label>
                 <label for="buyer-address">Address
                   <input type="text" name="address" id="buyer-address" placeholder="your complete address" required>
@@ -273,14 +271,17 @@
                   / Credit
                   Card
                 </label>
-                <button class="transaction-but" type="submit">Confirm Order</button>
+                <label for="submit">
+                  <input id="submit" type="submit" value="Confirm Order"></input>
+                </label>
               </div>
             </form>
           </div>
         </div>
       </section>
-
     </main>
+
+
     <footer id="footer">
       <div class="contact-socials-support-wrapper">
         <div class="contact-wrapper">
@@ -291,8 +292,6 @@
             <li>vr -station@gmail.com</li>
           </ul>
         </div>
-
-
         <div class="socials-wrapper">
           <h4>Socials</h4>
           <ul class="socials-list">
@@ -302,11 +301,10 @@
             <li><a href="#">Youtube</a></li>
           </ul>
         </div>
-
-
         <div class="support-wrapper">
           <h4>Support</h4>
           <ul class="support-list">
+            <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Downloads</a></li>
             <li><a href="#">Forum</a></li>
             <li><a href="#">Blog</a></li>
@@ -314,10 +312,12 @@
         </div>
       </div>
       <div class="copyright">
-        <h4><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit 2021</a></h4>
+        <h4><a href="https://codepen.io/mike-anthony" target="_blank">FCC-PRJ 2021</a></h4>
       </div>
     </footer>
+
   </section>
+
 </body>
 
 </html>
