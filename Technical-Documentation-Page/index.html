@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FCC-Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
@@ -14,11 +15,8 @@
   <nav id="navbar">
     <header>
       <h1>C++ DOCUCUMENTATION</h1>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-        alt="c++ logo">
     </header>
-    <ul>
+    <ul class="nav-link-lists">
       <li><a class="nav-link" href="#Introduction">Introduction</a></li>
       <li><a class="nav-link" href="#C++_C#_and_C">C++ C# and C</a></li>
       <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
@@ -32,8 +30,13 @@
       <li><a class="nav-link" href="#Functions">Functions</a></li>
       <li><a class="nav-link" href="#Reference">Reference</a></li>
     </ul>
-
+    <figure>
+      <img class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+        alt="c++ logo">
+    </figure>
   </nav>
+
 
   <main id="main-doc">
     <section id="Introduction" class="main-section">
@@ -168,13 +171,15 @@
 
         int main() 
         {
-        std::cout &lt;&lt;"Hello World!" ;
+        std::cout &lt;&lt;"Hello World!";
         return 0; 
         } 
         </code></pre>
         <p>Output</p>
 
-        <pre><code>        Hello World!</code></pre>
+        <pre><code>
+        Hello World!
+                </code></pre>
       </article>
     </section>
     <section id="Variables" class="main-section">
@@ -212,26 +217,27 @@
       <article>
         <p>The whole process described above is a simile of what a computer can do with two variables. The same process
           can be
-          expressed in C++ with the following set of statements:
+          expressed in C++ with the following set of statements:</p>
         <pre><code>
         a = 5;
         b = 2;
         a = a + 1;
-        result = a - b;</code></pre>
+        result = a - b;
+        </code></pre>
 
-        Obviously, this is a very simple example, since we have only used two small integer values, but consider that
-        your
-        computer can store millions of numbers like these at the same time and conduct sophisticated mathematical
-        operations
-        with them.
+        <p>Obviously, this is a very simple example, since we have only used two small integer values, but consider that
+          your
+          computer can store millions of numbers like these at the same time and conduct sophisticated mathematical
+          operations
+          with them.
 
-        We can now define variable as a portion of memory to store a value.
+          We can now define variable as a portion of memory to store a value.
 
-        Each variable needs a name that identifies it and distinguishes it from the others. For example, in the
-        previous code
-        the variable names were a, b, and result, but we could have called the variables any names we could have come
-        up with,
-        as long as they were valid C++ identifiers.
+          Each variable needs a name that identifies it and distinguishes it from the others. For example, in the
+          previous code
+          the variable names were a, b, and result, but we could have called the variables any names we could have come
+          up with,
+          as long as they were valid C++ identifiers.
         </p>
       </article>
     </section>
@@ -255,43 +261,54 @@
             appending an
             equal sign followed by the value to which the variable is initialized:</p>
 
-            <pre><code>            type identifier = initial_value;</code></pre>
+            <pre><code>            
+            type identifier = initial_value;
+            </code></pre>
             <p>For example, to declare a variable of type int called x and initialize it to a value of zero from the
               same
               moment it is declared, we can write:</p>
-            <pre><code>            int x = 0;</code></pre>
+            <pre><code>            
+            int x = 0;
+            </code></pre>
 
           </li>
 
-          <li> A second method, known as constructor initialization (introduced by the C++ language), encloses the
-            initial value between parentheses (()):
+          <li>
+            <p>A second method, known as constructor initialization (introduced by the C++ language), encloses the
+              initial value between parentheses (( )):</p>
 
             <pre><code>
             type identifier (initial_value);
             </code></pre>
             <p>For example:</p>
 
-            <pre><code>            int x (0);</code></pre>
+            <pre><code>
+            int x (0);
+            </code></pre>
 
           </li>
           <li>
-            Finally, a third method, known as uniform initialization, similar to the above, but using curly braces
-            <code>({})</code>
-            instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
+            <p>Finally, a third method, known as uniform initialization, similar to the above, but using curly braces
+
+              <code>({})</code>
+              instead of parentheses (this was introduced by the revision of the C++ standard, in 2011)
+            </p>
             <pre><code>
             type identifier {initial_value};
             </code></pre>
             <p>For example:</p>
 
-            <pre><code>            int x {0};
+            <pre><code> 
+            int x {0};
             </code></pre>
           </li>
           <li>
             <p>All three ways of initializing variables are valid and equivalent in C++.
             </p>
-            <pre><code>            //initialization of variables</code></pre>
+            <pre><code>
+            //initialization of variables
 
-            <pre><code>            #include &lt;iostream&gt;
+            #include &lt;iostream&gt;
               
             using namespace std;
         
@@ -306,7 +323,8 @@
             result = a - c;
             cout &lt;&lt; result;
             return 0; 
-            }</code></pre>
+            }
+            </code></pre>
           </li>
         </ul>
       </article>
@@ -350,7 +368,8 @@
           example:</p>
         <pre><code>
         const int LIGHT_SPEED = 299792458;
-        LIGHT_SPEED = 2500 // Error! LIGHT_SPEED is a constant.</code></pre>
+        LIGHT_SPEED = 2500 // Error! LIGHT_SPEED is a constant.
+        </code></pre>
 
         <p> Here, we have used the keyword const to declare a constant named LIGHT_SPEED.</p>
         <p> If we try to change the value of
@@ -383,21 +402,22 @@
           <li>if...else if...else statement</li>
         </ol>
         <h4>C++ if Statement</h4>
-        The syntax of the if statement is:
+        <p>The syntax of the if statement is:</p>
         <pre><code>
         if (condition) {
         // body of if statement
         }
         </code></pre>
-        The if statement evaluates the condition inside the parentheses ( ).
+        <p> The if statement evaluates the condition inside the parentheses ( ).</p>
         <ul>
           <li> If the condition evaluates to true, the code inside the body of if is executed.</li>
           <li> If the condition evaluates to false, the code inside the body of if is skipped.</li>
         </ul>
         <p> Note: The code inside { } is the body of the if statement.</p>
         <h4> Working of C++ if Statement</h4>
-        Example 1: C++ if Statement
-        <pre><code>          // Program to print positive number entered by the user
+        <p>Example 1: C++ if Statement</p>
+        <pre><code>
+          // Program to print positive number entered by the user
           // If the user enters a negative number, it is skipped.
           #include &lt;iostream&gt;
           using namespace std;
@@ -417,16 +437,19 @@
           return 0;
          }
         </code>
-          </pre>Output 1
-        <pre><code>          Enter an integer: 5 You entered a positive number: 5
+          </pre>
+        <p>Output 1</p>
+        <pre><code> 
+          Enter an integer: 5 You entered a positive number: 5
           This statement is always executed.
         </code></pre>
         <p> When the user enters 5, the condition number &gt; 0 is evaluated to true and the statement inside the body
           of if
           is executed.</p>
 
-        Output 2
-        <pre><code>          Enter a number: -5
+        <p>Output 2</p>
+        <pre><code>
+          Enter a number: -5
           This statement is always executed.
         </code></pre>
 
@@ -501,7 +524,8 @@
         // function declaration
         void greet() {
         cout &lt;&lt; "Hello World" ;
-        }</code></pre>
+        }
+        </code></pre>
         <p> Here, the name of the function is <code>greet()</code> the return type of the function is
           <code>void</code> the empty parentheses mean it doesn't have any parameters the function body is written
           inside.
